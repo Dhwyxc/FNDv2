@@ -1,0 +1,12 @@
+{
+    "type": "service_account",
+    "project_id": "decent-being-383017",
+    "private_key_id": "fa1f1498209eb9cbb44f714830bccd42c9eca2fe",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCmJ0RdJtbKnIiW\naFbOY1tMzqCtkJEzpoYD1Qror2ZgTPgFLRrnSzsEROQ0/nw644aNow5r2hNBF4J2\nOqPnMCrMYM/4JMWQ5JZkpz4vK/bPN03uhV6Vv9dxHYedVPVww3y4SShBvEB097am\ns4ejvvQhfYN+exJfJB6wmtcaV3Gh4BP7xBmrZiXVEM692M2kp6Tc8kMMSBfy/BO4\nMjzHr9YfCANE+Fj7WEBXe7D7KyDBxBUu/durWXOVf2c4WYfwDyqkJ+xGM2FRIIEF\nlag5E2Xb/KHquBFdsmdx4JWRJnm4qJjIFaAZ/CAb4PNxzkXb0UFEIwxjG4EHGxtv\nvsPBMgTPAgMBAAECggEAGIhOt0RPTY4sOq0AOCwCZIZTwhzI26v4OKOhnzaaspha\nvITq5oC8n4Y+fbafiCBlEw+ixvjlg+RhPmytG6sIfrHCszxWsWyW6hipfVSL9g+P\n4apui0TOniSCjA/px3MNvLYMjBwsFjknDlkOq3Y73KAIJMouLb8LCv9pyDlmDUTn\nxv06lq8ADteTr+ZfYrExV0hAhUwsS0MkB1PnuFSjUU/+9XJhcHSkXkUxbDxMRpoF\nEsthcGiL6Gv54FL8fwg/8yyMGo7ygKstU2HQOvyajvtJy67CTk9eA2B4K6drOGOk\nAFqxdWk+61cyCbXS/Ace85npaSEryBmFnWrK8IF3gQKBgQDogQi/c7VnvXUQmj4d\nMT4X/OYnFzF+FA1xUUh1eqae0nvnufq6RE9NeJDxqphhoHnXelpOUSBSbtdBOAWX\nAQomXip5BRQsBN4MdlGIi2qt08AOQTNaZONoRtxyJWC+/h/9lnWZa0l3j/bqHubK\nXKB53W8vVlQDbQxSfMsF1dPwgQKBgQC28beDplOPBKmUD8mI9rlM8f7BFIoGhtX/\nDRxO0/buXI7aEPRB867OGXZPXmP8T9TMhOnrJNyyl8WZYWlIVH9qRqNmf/dnXM2P\nb+zsG6PxQQBvceS/8EkECuz5mrCAfb3kJV7zHZUIRlURF1RNqn74PvuVwBTjujhU\nBAuHi3RNTwKBgQDdGSeqeGw/1MioGyWKOTOlOBfdgI7OKF+ILRXMsfAVBHBTsmYe\nD6uiLk8XoXT7EdIL+Qw7gaZM/Z6xJIccTB7M0atuHkhKe+50x2dNg9bUqpLue05M\nXbhrh0dHPQg9WAgv7I60cHQSwNK7XNt4AJGSkeKTj3KhN2gKYSXnzKmZAQKBgCnc\nXXWOVYhgNL1gb2kbq4LjzLs5i+u6ZrUZtuSCs/oOy9EyF/IPZGxcfyniG1bcnYC+\n2RepM6bZ+6kBFSory4vx5enKVj4cihzMK5ZLLNRDX2og0Yrp3ItERL1InCKKoyzV\nMEjI+BUQot5qTCwJW0xKfR7i+OSy87ilxE2bp10ZAoGBANVK65yvkxJ1tA+3jkVu\nG5p6deywKzblP8GvBUE8u7Mt+3AmV9tYDXVMq8405xd7ouxcJBmqpPEXF84hS+D2\nySCdz6B8YLZuygwivZdJ4se1Y6GNAoM02QX6qiE/g6qGpw0jxxK1AsuZtfDr/dC+\nEmmSRafjoMa4tKwc3g6vAAlZ\n-----END PRIVATE KEY-----\n",
+    "client_email": "ngocnhan@decent-being-383017.iam.gserviceaccount.com",
+    "client_id": "115874035211189858261",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ngocnhan%40decent-being-383017.iam.gserviceaccount.com"
+}

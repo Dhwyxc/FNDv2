@@ -1,4 +1,6 @@
-from flask import Flask
+import os
+
+from flask import Flask, jsonify
 from flask import request
 import json
 import dill
@@ -9,6 +11,14 @@ from underthesea import word_tokenize
 import pickle
 from keras.models import load_model
 from underthesea import classify
+from google.cloud import vision
+
+ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'])
+
+def allowed_file(filename):
+	return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
+
 #################################
 # Các hàm tiền xử lý dữ liệu từ file notebook
 
@@ -107,12 +117,38 @@ app = Flask(__name__)
 @app.route("/api/predict",methods=['POST'])
 def predict():
     record = json.loads(request.data)
+    print(record)
     if(record['text']==''):
         return '2'
     else:
         pred_rs = model_predict(record['model'], record['text'])
         rs = str(pred_rs)+";"+"".join(classify(record['text']))
-        print(rs)
         return rs
-
+@app.route("/api/upload",methods=['POST'])
+def upload():
+    if 'file' not in request.files:
+        resp = jsonify({'message': 'No file part in the request'})
+        resp.status_code = 400
+        return resp
+    file = request.files['file']
+    if file.filename == '':
+        resp = jsonify({'message': 'No file selected for uploading'})
+        resp.status_code = 400
+        return resp
+    if file and allowed_file(file.filename):
+        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "./certificate.json"
+        client = vision.ImageAnnotatorClient()
+        content = file.read()
+        image = vision.Image(content=content)
+        response = client.text_detection(image=image)
+        texts = response.text_annotations
+        my_list = list()
+        for text in texts:
+            my_list.append(text.description)
+        return jsonify(my_list)
+        return resp
+    else:
+        resp = jsonify({'message': 'Allowed file types are txt, pdf, png, jpg, jpeg, gif'})
+        resp.status_code = 400
+        return resp
 app.run(port=8888, host = '0.0.0.0')
